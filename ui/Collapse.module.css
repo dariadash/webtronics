@@ -1,0 +1,35 @@
+.collapse,
+.collapse_open {
+    border-radius: 10px;
+    background: var(--background-gradient);
+    padding: 1px;
+    clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 50%);
+}
+
+.collapse_content,
+.collapse_open_content {
+    border-radius: 10px;
+    background: var(--background);
+
+    padding: 16.5px 24px;
+    clip-path: polygon(5% 0, 100% 0, 100% 60%, 95% 100%, 0 100%, 0 50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.collapse_open,
+.collapse_open_content {
+    clip-path: polygon(5% 0, 100% 0, 100% 80%, 95% 100%, 0 100%, 0 22%);
+}
+
+.collapse_open_content {
+    padding: 27.5px 24px;
+}
+
+.collapse_label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,96 @@
+:root {
+  font-family: 'Inter', sans-serif;
+
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Inter';
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --background: #1C2242;
+  --background-gradient: linear-gradient(170deg, rgba(21, 191, 253, 1) 0%, rgba(156, 55, 253, 1) 100%);
+
+  --input-color: #A2CBFB;
+  --button-background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+  --button-color: #0A1482;
+  --button-color-hover: #3B48D0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: #FFFFFF;
+  background-color: #0C102D;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+h1 {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 150px;
+  line-height: 120%;
+}
+
+h2 {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 120%;
+}
+
+h3 {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+h4 {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.p1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.p2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.icon {
+  cursor: pointer;
+}

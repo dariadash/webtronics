@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    min-height: 500px;
+}
+
+.question_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content_title {
+    width: 650px;
+    text-align: center;
+}
+
+.title {
+    max-width: 280px;
+}
+
+.collapse_list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 700px;
+}

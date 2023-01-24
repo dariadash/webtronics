@@ -1,0 +1,60 @@
+.line {
+    width: 4px;
+    height: 877px;
+    background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+    position: absolute;
+    top: 16px;
+    right: 120px;
+}
+
+.arrow1,
+.arrow2,
+.arrow3,
+.arrow4,
+.arrow5,
+.arrow6 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.arrow1 {
+    top: -5px;
+    right: -10px;
+}
+
+.arrow2 {
+    top: 135px;
+    right: -90px;
+    transform: scaleX(-1);
+}
+
+.arrow3 {
+    top: 355px;
+    right: -10px;
+}
+
+.arrow4 {
+    bottom: 355px;
+    right: -90px;
+    transform: scaleX(-1);
+}
+
+.arrow5 {
+    bottom: 135px;
+    right: -10px;
+}
+
+.arrow6 {
+    bottom: -5px;
+    right: -90px;
+    transform: scaleX(-1);
+}
+
+.dot {
+    background: #3B48D0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}

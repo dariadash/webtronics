@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 1200px;
+    z-index: 2;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.last_line {
+    display: flex;
+    justify-content: flex-end;
+    width: 97%;
+}
+
+.text {
+    width: 359px;
+    padding-left: 33px;
+}

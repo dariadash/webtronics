@@ -1,0 +1,29 @@
+.arrows {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.arrow_wrapper {
+    border-radius: 8px;
+    background: var(--background-gradient);
+    padding: 1px;
+}
+
+.arrow {
+    border-radius: 8px;
+    background: var(--background);
+    border: none;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    opacity: 0.6;
+}
