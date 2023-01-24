@@ -9,7 +9,6 @@ export const postData = createAsyncThunk(
             const { data } = await axios.post('http://localhost:3004/feedback', postData)
             return data
         } catch (e) {
-            console.log(e)
             return thunkAPI.rejectWithValue('Ошибка загрузки')
         }
     }

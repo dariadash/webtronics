@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { postData } from "./thunks";
-import { User, InitialStateType } from "./types";
+import { User, InitialStateType, RequestStatus } from "./types";
 
 const initialState: InitialStateType = {
     data: {
@@ -11,6 +11,7 @@ const initialState: InitialStateType = {
     },
     error: null,
     loading: false,
+    status: ''
 }
 
 
@@ -23,13 +24,16 @@ export const chartSlice = createSlice({
             state.loading = false;
             state.error = null;
             state.data = action.payload;
+            state.status = RequestStatus.Succeeded;
         },
         [postData.pending.type]: (state) => {
             state.loading = true;
+            state.status = RequestStatus.Loading;
         },
         [postData.rejected.type]: (state, action) => {
             state.loading = false;
             state.error = action.payload;
+            state.status = RequestStatus.Failed;
         },
     }
 })
